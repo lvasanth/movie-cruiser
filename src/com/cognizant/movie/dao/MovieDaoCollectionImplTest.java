@@ -11,6 +11,7 @@ public class MovieDaoCollectionImplTest {
         testGetMovieListAdmin();
         testgetMovieListCustomer();
         testModifyMovieList();
+        testGetMovieListAdmin();
         testgetMovieListCustomer();
         testGetMovieById();
 
