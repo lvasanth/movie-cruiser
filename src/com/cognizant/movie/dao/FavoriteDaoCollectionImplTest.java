@@ -8,10 +8,12 @@ public class FavoriteDaoCollectionImplTest {
     static FavoriteDao favoriteDao = new FavoriteDaoCollectionImpl();
 
     public static void main(String[] args) {
+
         testAddFavorites();
         testgetAllFavorites();
         testRemoveFavorites();
         testgetAllFavorites();
+
     }
 
     public static void testAddFavorites() {
@@ -25,18 +27,21 @@ public class FavoriteDaoCollectionImplTest {
     }
 
     public static void testRemoveFavorites() {
-        System.out.println("Remove favorites ");
-
+        System.out.println("Remove Favorites ");
         System.out.println(
                 "--------------------------------------------------------------------------------------------------------------------------------------------");
+
         favoriteDao.removeFavoritesById(1, 3);
+        favoriteDao.removeFavoritesById(1, 5);
     }
 
     public static void testgetAllFavorites() {
         try {
-            System.out.println("Retrieving  favorites");
+            System.out.println("Retrieving  Favorites");
             System.out.println(
                     "--------------------------------------------------------------------------------------------------------------------------------------------");
+            System.out.printf("%-10s%-20s%-18s%-15s%-19s%-19s%s\n", "Id", "Title", "Box Office",
+                    "Active", "Date Of Launch", "Genre", "Has Teaser");
             List<Movie> list = favoriteDao.getAllFavorites(1).getFavoriteList();
             for (Movie movie : list) {
                 System.out.println(movie);

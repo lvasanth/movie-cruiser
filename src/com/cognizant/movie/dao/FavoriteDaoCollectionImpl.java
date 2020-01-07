@@ -29,9 +29,8 @@ public class FavoriteDaoCollectionImpl implements FavoriteDao {
         }
         favorite.setTotal(total);
         return favorite;
-
     }
-  
+
     @Override
     public void addFavoritesById(long userId, long movieId) {
         MovieDao menuItems = new MovieDaoCollectionImpl();
