@@ -40,7 +40,7 @@ public class FavoriteDaoCollectionImplTest {
             System.out.println("Retrieving  Favorites");
             System.out.println(
                     "--------------------------------------------------------------------------------------------------------------------------------------------");
-            System.out.printf("%-10s%-20s%-18s%-15s%-19s%-19s%s\n", "Id", "Title", "Box Office",
+            System.out.printf("%-10s%-22s%-15s%-15s%-23s%-15s%s\n", "Id", "Title", "Box Office",
                     "Active", "Date Of Launch", "Genre", "Has Teaser");
             List<Movie> list = favoriteDao.getAllFavorites(1).getFavoriteList();
             for (Movie movie : list) {

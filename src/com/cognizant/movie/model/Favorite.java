@@ -5,7 +5,7 @@ import java.util.List;
 public class Favorite {
     private List<Movie> favoriteList;
     private int total;
-    
+
     public Favorite() {
         // TODO Auto-generated constructor stub
     }
@@ -30,8 +30,5 @@ public class Favorite {
     public String toString() {
         return "Favorite [favoriteList=" + favoriteList + ", total=" + total + "]";
     }
-
-    
-    
 
 }
