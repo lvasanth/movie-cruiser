@@ -43,7 +43,7 @@ public class MovieDaoCollectionImplTest {
     }
 
     public static void testModifyMovieList() {
-        System.out.println("modify movie");
+        System.out.println("Modify movie");
         System.out.println(
                 "--------------------------------------------------------------------------------------------------------------------------------------------");
         Movie movie = new Movie(1, "Frozen", 1234555555L, true,
