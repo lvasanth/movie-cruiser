@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 <head>
 <title>Edit Status</title>
@@ -9,13 +11,11 @@
 
 <body>
     <header>
-        <h1>
-            Movie Cruiser &nbsp;<img src="images/logo.png" width=33 height=34 />
-        </h1>
+    <h1>
+        Movie Cruiser &nbsp;<img src="images/logo.png" width=33 height=34 />
+    </h1>
     </header>
-    <nav>
-        <a class="movies" href="movie-list-admin.html"> Movies </a>
-    </nav>
+    <nav> <a class="movies" href="ShowMovieListAdmin"> Movies </a> </nav>
 
 
     <table class="table" cellpadding="10">
@@ -26,10 +26,6 @@
             <td id="edit-status">Movie details saved successfully</td>
         </tr>
     </table>
-
-
-
-
 
 
     <footer> Copyright &copy; 2019 </footer>

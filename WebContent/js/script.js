@@ -1,8 +1,8 @@
-function valid() {
-    var title = document.forms["form"]["title"].value;
-    var boxOffice = document.forms["form"]["boxOffice"].value;
-    var dateOfLaunch = document.forms["form"]["dateOfLaunch"].value;
-    var genre = document.forms["form"]["genre"].value;
+function validateMovieForm() {
+    var title = document.forms["movieForm"]["title"].value;
+    var boxOffice = document.forms["movieForm"]["boxOffice"].value;
+    var dateOfLaunch = document.forms["movieForm"]["dateOfLaunch"].value;
+    var genre = document.forms["movieForm"]["genre"].value;
 
     if (title == "") {
         alert("Title is required. ");
