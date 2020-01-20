@@ -67,14 +67,13 @@
                 <td><fmt:formatDate value="${movie.getDateOfLaunch()}" pattern="dd/MM/yyyy"
                         var="dateOfLaunch" /><input type="text" name="dateOfLaunch"
                     value="${dateOfLaunch}" placeholder="dd/mm/yyyy"></td>
-                <td><select id="genre" name="genre">
+                <td><select name="genre">
                         <option value="${movie.getGenre()}">${movie.getGenre()}</option>
-                        <option value="Main Course">Science Fiction</option>
                         <option value="Superhero">Superhero</option>
-                        <option value="romance">Romance</option>
-                        <option value="comedy">Comedy</option>
-                        <option value="adventure">Adventure</option>
-                        <option value="thriller">Thriller</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Science Fiction">Science Fiction</option>
+                        <option value="Adventure">Adventure</option>
+
                 </select></td>
             </tr>
 

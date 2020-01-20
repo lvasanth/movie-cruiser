@@ -27,7 +27,7 @@
             <h1 id="h1">Movies</h1>
         </tr>
         <tr>
-            <td>
+
             <td colspan="5" align="center" id="edit-status"><c:if
                     test="${addFavoriteStatus==true}">
                    Item added to cart Successfully</td>

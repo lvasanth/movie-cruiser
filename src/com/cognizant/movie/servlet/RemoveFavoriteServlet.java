@@ -32,12 +32,7 @@ public class RemoveFavoriteServlet extends HttpServlet {
             favoriteDao.removeFavoritesById(userId, movieId);
             Favorite favorite = favoriteDao.getAllFavorites(userId);
             List<Movie> movieList = favorite.getFavoriteList();
-            int total = 0;
-
-            for (Movie movie : movieList) {
-                total = (int) (total + userId);
-
-            }
+            int total = movieList.size();
 
             favorite.setTotal(total);
             request.setAttribute("movie", movieList);// carry all the items to cart
